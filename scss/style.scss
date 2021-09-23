@@ -51,7 +51,7 @@ span {
     font-family: 'Lusitana', serif;
     position: absolute;
     transform: translateY(410px);
-    color: #4b4f55;
+    color: #fff;
 
     @include tablet {
         font-size: 40px;
@@ -62,7 +62,6 @@ span {
     @include desktop {
         font-size: 80px;
         transform: translateY(400px);
-        color: white;
 
     }
 }
@@ -90,7 +89,7 @@ span {
 
 .profile-picture-hero {
 
-    background-image: url('../image/ryunosuke-kikuno-KqDgC1WMZ8M-unsplash.jpg');
+    background-image: linear-gradient(90deg ,rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.2)), url('../image/ryunosuke-kikuno-KqDgC1WMZ8M-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
