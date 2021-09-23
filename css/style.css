@@ -44,7 +44,7 @@ span {
   top: 450px; }
 
 .profile-picture-hero {
-  background-image: url("/image/ryunosuke-kikuno-KqDgC1WMZ8M-unsplash.jpg");
+  background-image: url("../image/ryunosuke-kikuno-KqDgC1WMZ8M-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -64,30 +64,31 @@ span {
 .name-title {
   margin-top: 100px; }
 
-.introduction {
-  color: #fff;
-  font-family: 'Lusitana',serif;
-  padding: 30px;
-  font-size: 30px;
-  line-height: 50px; }
+.intro-container {
+  margin-top: 80px; }
+  .intro-container .introduction {
+    color: #fff;
+    font-family: 'Lusitana',serif;
+    padding: 30px;
+    font-size: 30px;
+    line-height: 50px; }
 
-.step-1 {
+.steps-container .steps {
   font-family: 'Londrina Sketch', cursive;
-  font-size: 70px; }
-
-.step-2 {
-  font-family: 'Luckiest Guy', cursive;
-  font-size: 60px; }
-
-.step-3 {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 40px; }
+  font-size: 70px;
+  color: white; }
+.steps-container .steps-description {
+  color: white;
+  font-size: 16px;
+  font-family: 'Lusitana', serif; }
 
 .list-portfolio {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   text-align: center; }
+  .list-portfolio .portfolio-title {
+    margin-bottom: 30px; }
   .list-portfolio .links-btns {
     border-style: none;
     border: 2px solid #f3bd52;
@@ -98,9 +99,11 @@ span {
 
 .socials {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 50px; }
+  .socials h2 {
+    margin-bottom: 20px; }
   .socials a {
     margin: 10px; }
 

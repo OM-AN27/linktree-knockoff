@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Luckiest+Guy&family=Lusitana:wght@700&family=Press+Start+2P&display=swap');
+@import 'mixin';
 
 //SOFT RESET
 
@@ -62,7 +63,7 @@ span {
 
 .profile-picture-hero {
 
-    background-image: url('/image/ryunosuke-kikuno-KqDgC1WMZ8M-unsplash.jpg');
+    background-image: url('../image/ryunosuke-kikuno-KqDgC1WMZ8M-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -86,31 +87,38 @@ span {
     margin-top: 100px;
 }
 
-.introduction {
-    color: #fff;
-    font-family: 'Lusitana',serif;
-    padding: 30px;
-    font-size: 30px;
-    line-height: 50px;
 
-}
+.intro-container {
 
-.step-1 {
-    font-family: 'Londrina Sketch', cursive;
-    font-size: 70px;
-}
+    margin-top: 80px;
 
-.step-2 {
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 60px;
+    .introduction {
+        color: #fff;
+        font-family: 'Lusitana',serif;
+        padding: 30px;
+        font-size: 30px;
+        line-height: 50px;
     
+    }
 }
 
-.step-3 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 40px;
+
+.steps-container {
     
+
+    .steps {
+        font-family: 'Londrina Sketch', cursive;
+        font-size: 70px;
+        color: white;
+    }
+
+    .steps-description {
+        color: white;
+        font-size: 16px;
+        font-family: 'Lusitana', serif;
+    }
 }
+
 
 
 .list-portfolio {
@@ -119,7 +127,9 @@ span {
     margin-top: 30px;
     text-align: center;
 
-
+    .portfolio-title {
+        margin-bottom: 30px;
+    }
 
     .links-btns {
         border-style: none;
@@ -135,9 +145,13 @@ span {
 
 .socials {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 50px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
 
     a {
         margin: 10px;
