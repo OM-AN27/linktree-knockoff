@@ -33,6 +33,10 @@ h2 {
     font-family: 'Lusitana', serif;
     text-transform: uppercase;
     color: white;
+
+    @include desktop {
+        font-size: 40px;
+    }
 }
 
 span {
@@ -42,15 +46,24 @@ span {
 
 
 .job-title {
-    top: 410px;
+    
     text-transform: uppercase;
     font-family: 'Lusitana', serif;
     position: absolute;
+    transform: translateY(410px);
     color: #4b4f55;
 
     @include tablet {
         font-size: 40px;
-        top: 490px;
+        transform: translateY(490px);
+        
+    }
+
+    @include desktop {
+        font-size: 80px;
+        transform: translateY(400px);
+        color: white;
+
     }
 }
 
@@ -62,11 +75,15 @@ span {
     border-radius: 5px;
     font-size: 25px;
     position: absolute;
-    top: 450px;
+    transform: translateY(440px);
 
     @include tablet {
         font-size: 30px;
-        top: 550px;
+        transform: translateY(530px);
+    }
+
+    @include desktop {
+        transform: translateY(500px);
     }
 }
 
@@ -81,6 +98,12 @@ span {
     height: 100vh;
     filter: blur(1px);
 
+    @include desktop {
+        background-image: linear-gradient(90deg ,rgba(0, 0, 0, 0.3) , rgba(0, 0, 0, 0.3)),url('../image/kyler-nixon-_ZBekGTBh-c-unsplash.jpg');
+        filter: blur(2px);
+        background-attachment: fixed;
+    }
+
 }
 
 .profile-pic {
@@ -93,12 +116,20 @@ span {
     @include tablet {
         width: 200px;
         height: 200px;
-        top: 880px;
+    }
+
+    @include desktop {
+        width: 230px;
+        height: 230px;
     }
 }
 
 
 .intro-container {
+
+    @include desktop {
+        text-align: center;
+    }
 
 
     .introduction {
@@ -107,24 +138,46 @@ span {
         padding: 30px;
         font-size: 30px;
         line-height: 50px;
+
+        @include desktop {
+            padding: 30px 170px;
+            font-size: 40px;
+            line-height: 55px;
+
+        }
     
     }
 }
 
 
 .steps-container {
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 30px;
+    }
     
 
     .steps {
         font-family: 'Londrina Sketch', cursive;
         font-size: 70px;
         color: white;
+
+        @include desktop {
+            font-size: 90px;
+        }
     }
 
     .steps-description {
         color: white;
         font-size: 16px;
         font-family: 'Lusitana', serif;
+
+        @include desktop {
+            font-size: 20px;
+        }
     }
 }
 
@@ -148,6 +201,11 @@ span {
         padding: 20px 80px;
         border-radius: 50px;
         background-color: transparent;
+
+        @include desktop {
+            padding: 20px 200px;
+            font-size: 20px;
+        }
     }
 }
 

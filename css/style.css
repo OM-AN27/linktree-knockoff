@@ -21,21 +21,29 @@ h2 {
   font-family: 'Lusitana', serif;
   text-transform: uppercase;
   color: white; }
+  @media screen and (min-width: 1240px) {
+    h2 {
+      font-size: 40px; } }
 
 span {
   color: #f3bd52;
   font-size: 40px; }
 
 .job-title {
-  top: 410px;
   text-transform: uppercase;
   font-family: 'Lusitana', serif;
   position: absolute;
+  transform: translateY(410px);
   color: #4b4f55; }
   @media screen and (min-width: 600px) {
     .job-title {
       font-size: 40px;
-      top: 490px; } }
+      transform: translateY(490px); } }
+  @media screen and (min-width: 1240px) {
+    .job-title {
+      font-size: 80px;
+      transform: translateY(400px);
+      color: white; } }
 
 .location {
   background-color: #C8102E;
@@ -45,11 +53,14 @@ span {
   border-radius: 5px;
   font-size: 25px;
   position: absolute;
-  top: 450px; }
+  transform: translateY(440px); }
   @media screen and (min-width: 600px) {
     .location {
       font-size: 30px;
-      top: 550px; } }
+      transform: translateY(530px); } }
+  @media screen and (min-width: 1240px) {
+    .location {
+      transform: translateY(500px); } }
 
 .profile-picture-hero {
   background-image: url("../image/ryunosuke-kikuno-KqDgC1WMZ8M-unsplash.jpg");
@@ -59,6 +70,11 @@ span {
   width: 100%;
   height: 100vh;
   filter: blur(1px); }
+  @media screen and (min-width: 1240px) {
+    .profile-picture-hero {
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../image/kyler-nixon-_ZBekGTBh-c-unsplash.jpg");
+      filter: blur(2px);
+      background-attachment: fixed; } }
 
 .profile-pic {
   width: 180px;
@@ -69,24 +85,47 @@ span {
   @media screen and (min-width: 600px) {
     .profile-pic {
       width: 200px;
-      height: 200px;
-      top: 880px; } }
+      height: 200px; } }
+  @media screen and (min-width: 1240px) {
+    .profile-pic {
+      width: 230px;
+      height: 230px; } }
 
+@media screen and (min-width: 1240px) {
+  .intro-container {
+    text-align: center; } }
 .intro-container .introduction {
   color: #fff;
   font-family: 'Lusitana',serif;
   padding: 30px;
   font-size: 30px;
   line-height: 50px; }
+  @media screen and (min-width: 1240px) {
+    .intro-container .introduction {
+      padding: 30px 170px;
+      font-size: 40px;
+      line-height: 55px; } }
 
+@media screen and (min-width: 1240px) {
+  .steps-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 30px; } }
 .steps-container .steps {
   font-family: 'Londrina Sketch', cursive;
   font-size: 70px;
   color: white; }
+  @media screen and (min-width: 1240px) {
+    .steps-container .steps {
+      font-size: 90px; } }
 .steps-container .steps-description {
   color: white;
   font-size: 16px;
   font-family: 'Lusitana', serif; }
+  @media screen and (min-width: 1240px) {
+    .steps-container .steps-description {
+      font-size: 20px; } }
 
 .list-portfolio {
   display: flex;
@@ -103,6 +142,10 @@ span {
     padding: 20px 80px;
     border-radius: 50px;
     background-color: transparent; }
+    @media screen and (min-width: 1240px) {
+      .list-portfolio .links-btns {
+        padding: 20px 200px;
+        font-size: 20px; } }
 
 .socials {
   display: flex;
