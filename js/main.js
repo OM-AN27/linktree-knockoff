@@ -8,7 +8,7 @@ function fadeIn() {
 
         let windowTop = window.innerHeight;
         let fadeTop = allItems[i].getBoundingClientRect().top;
-        let fadePoint = 150; 
+        let fadePoint = 100; 
 
         if(fadeTop < windowTop - fadePoint) {
             allItems[i].classList.add('active');
