@@ -13,7 +13,6 @@
 main {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     background-color: #4b4f55;
 }
@@ -33,6 +32,11 @@ h2 {
     font-family: 'Lusitana', serif;
     text-transform: uppercase;
     color: white;
+}
+
+span {
+    color: #f3bd52;
+    font-size: 40px;
 }
 
 
@@ -82,10 +86,18 @@ h2 {
     margin-top: 100px;
 }
 
+.introduction {
+    color: #fff;
+    font-family: 'Lusitana',serif;
+    padding: 30px;
+    font-size: 30px;
+    line-height: 50px;
+}
+
 .list-portfolio {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
 
 
 
