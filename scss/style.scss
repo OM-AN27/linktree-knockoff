@@ -47,6 +47,11 @@ span {
     font-family: 'Lusitana', serif;
     position: absolute;
     color: #4b4f55;
+
+    @include tablet {
+        font-size: 40px;
+        top: 490px;
+    }
 }
 
 .location {
@@ -58,6 +63,11 @@ span {
     font-size: 25px;
     position: absolute;
     top: 450px;
+
+    @include tablet {
+        font-size: 30px;
+        top: 550px;
+    }
 }
 
 
@@ -74,23 +84,22 @@ span {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: 7px solid white;
-    margin-top: 40px;
-    position: absolute;
-    top: 700px;
-}
+    transform: translateY(-90px);
 
-.name-title {
-    margin-top: 100px;
+    @include tablet {
+        width: 200px;
+        height: 200px;
+        top: 880px;
+    }
 }
 
 
 .intro-container {
 
-    margin-top: 80px;
 
     .introduction {
         color: #fff;
@@ -128,6 +137,7 @@ span {
     text-align: center;
 
     .portfolio-title {
+        margin-top: 30px;
         margin-bottom: 30px;
     }
 
